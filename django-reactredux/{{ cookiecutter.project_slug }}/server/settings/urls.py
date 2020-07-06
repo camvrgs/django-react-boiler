@@ -20,6 +20,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^', include(('modules.{{ cookiecutter.server_project_slug }}.urls', '{{ cookiecutter.server_project_slug }}'), namespace='{{ cookiecutter.server_project_slug }}')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^', include(('modules.site.urls', 'site'), namespace='site')),
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

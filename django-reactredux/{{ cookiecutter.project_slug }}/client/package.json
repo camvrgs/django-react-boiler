@@ -3,7 +3,7 @@
   "author": "{{cookiecutter.author}}",
   "version": "{{cookiecutter.client_project_version}}",
   "description": "{{cookiecutter.client_project_description}}",
-  "license": "{{cookiecutter.client_project_license}}",
+  "license": "{{cookiecutter.project_license}}",
   "repository": "{{cookiecutter.client_repo}}",
   "main": "index.js",
   "scripts": {

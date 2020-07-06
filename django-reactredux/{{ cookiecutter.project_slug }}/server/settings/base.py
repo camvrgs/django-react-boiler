@@ -132,17 +132,6 @@ MEDIA_ROOT = './uploads/'
 MEDIA_URL = '/upload/'
 """
 
-WEBPACK_LOADER = {
-    'DEFAULT': {
-        'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'bundles/',  # must end with a slash
-        'STATS_FILE': os.path.join(ROOT_DIR, 'client', 'build', 'webpack-stats.json'),
-        'POLL_INTERVAL': 0.1,
-        'TIMEOUT': None,
-        'IGNORE': [r'.+\.hot-update.js']
-    }
-}
-
 SESSION_COOKIE_NAME = '{{ cookiecutter.project_slug }}'
 # below needs to match root for admin in settings.urls
 SESSION_COOKIE_PATH = '/'

@@ -19,5 +19,5 @@
 	"client_style_slug":"{{ cookiecutter.client_project_name|replace(' ', '')|lower|string + '_style' }}",
 	"client_project_description":"Your app description",
 	"client_project_version":"0.1.0",
-	"client_repo":"{{ cookiecutter.frontend_project_name|replace(' ', '')|lower }}"
+	"client_repo":"{{ cookiecutter.client_project_name|replace(' ', '')|lower }}"
 }
