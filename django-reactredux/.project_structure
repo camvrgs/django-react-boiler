@@ -1,0 +1,74 @@
+project-slug/
+├── setup.py
+├── setup_db.py
+│
+├── client/
+│	├── src/
+│	│	├── scripts/
+│	│	│	├── polyfills/
+│	│	│	│	└── index.js
+│	│	│	│
+│	│	│	└── client-project-slug/
+│	│	│		├── actions/
+│	│	│		│	├── index.js
+│	│	│		│	└── types.js
+│	│	│		├── components/
+│	│	│		├── containers/
+│	│	│		├── reducers/
+│	│	│		│	└── index.js
+│	│	│		├── tests/
+│	│	│		├── utils/
+│	│	│		├── index.js
+│	│	│		└── store.js
+│	│	│
+│	│	└── styles/
+│	│		├── partials/
+│	│		├── vendor/
+│	│		├── main.js
+│	│		└── main.sass
+│	│
+│	├── webpack/
+│	│	├── webpack.common.js
+│	│	├── webpack.dev.js
+│	│	└── webpack.prod.js
+│	│
+│	├── .babelrc
+│	├── .eslintrc.json
+│	├── .htmlhintrc
+│	├── .sass-lint.yml
+│	├── package.json
+│	├── setupTests.js
+│	└── webpack.config.js
+│
+└── server/
+	├── __init__.py
+	├── manage.py
+	│
+	├── modules/
+	│	├── __init__.py
+	│	└── server-project-slug/
+	│	 	├── migrations/
+	│	 	│	└── __init__.py
+	│	 	├── modules/
+	│	 	│	└── __init__.py
+	│	 	├── templates/
+	│	 	├── __init__.py
+	│	 	├── admin.py
+	│	 	├── apps.py
+	│	 	├── models.py
+	│	 	├── tests.py
+	│	 	├── urls.py
+	│	 	└── view.py
+	│
+	├── settings/
+	│	├── __init__.py
+	│	├── base.py
+	│	├── development.py
+	│	├── production.py
+	│	├── urls.py
+	│	└── wsgi.py
+	│
+ 	├── static/
+ 	├── templates/
+ 	└── www/
+ 	 	└── bundles/

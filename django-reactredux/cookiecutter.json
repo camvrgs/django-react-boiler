@@ -1,0 +1,23 @@
+{
+	"project_name":"Project Site",
+	"project_slug":"{{ cookiecutter.project_name|replace(' ', '_')|lower }}",
+	"project_website":"{{ 'www.' + cookiecutter.project_slug|string + '.com' }}",
+	"project_license":"MIT",
+	"author":"Cameron Vargas",
+	"date":"{% now 'local', '%B %d, %Y - %H:%M' %}",
+
+	"server_project_name":"Site",
+	"server_project_slug":"{{ cookiecutter.server_project_name|replace(' ', '_')|lower }}",
+	"server_postgres_db_name":"db_postgres_server",
+	"server_postgres_username":"admin",
+	"server_postgres_pass":"adminRoot",
+	"server_postgres_host":"localhost",
+	"server_postgres_port":"5432",
+
+	"client_project_name":"App",
+	"client_project_slug":"{{ cookiecutter.client_project_name|replace(' ', '_')|lower }}",
+	"client_style_slug":"{{ cookiecutter.client_project_name|replace(' ', '')|lower|string + '_style' }}",
+	"client_project_description":"Your app description",
+	"client_project_version":"0.1.0",
+	"client_repo":"{{ cookiecutter.frontend_project_name|replace(' ', '')|lower }}"
+}
